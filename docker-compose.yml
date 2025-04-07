@@ -1,0 +1,16 @@
+services:
+  next-app:
+    image: node:20-alpine  # 使用官方 Node.js 镜像
+    working_dir: /app
+    volumes:
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json  # 如果使用 npm
+      - ./.next:/app/.next  # 挂载预构建的 .next 目录
+      - ./public:/app/public  # 挂载 public 目录（如果有）
+      - ./next.config.js:/app/next.config.js  # 挂载 next.config.js（如果有）
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    command: sh -c "npm install -g pnpm && pnpm install --prod && pnpm start"  # 安装 pnpm 并运行
+    restart: unless-stopped

@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-    "prepare": "husky install",
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi",
     "commit": "cz",
     "inspect": "tree -l 4 -o fe-tree-output.txt --ignore node_modules",
     "release": "standard-version",
