@@ -2,7 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.1.2](https://github.com/ArcMichael/next-bootstrap/compare/v0.1.1...v0.1.2) (2025-04-07)
+## <small>0.1.2 (2025-04-07)</small>
+
+- chore(release): 0.1.2 ([144f775](https://github.com/ArcMichael/next-bootstrap/commit/144f775))
+- ci(changelog): add logger ([ef064c3](https://github.com/ArcMichael/next-bootstrap/commit/ef064c3))
 
 ## <small>0.1.1 (2025-04-07)</small>
 
