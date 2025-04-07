@@ -1,3 +1,7 @@
+# next-bootstrap
+
+This project serves as a comprehensive scaffolding tool designed to streamline the development of operational portals using Next.js and Ant Design, following modern engineering best practices such as modular structure, built-in auth templates, and reusable UI components.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
