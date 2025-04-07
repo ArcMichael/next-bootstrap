@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "prepare": "husky install",
     "commit": "cz",
-    "inspect": "tree -l 4 -o fe-tree-output.txt --ignore node_modules"
+    "inspect": "tree -l 4 -o fe-tree-output.txt --ignore node_modules",
+    "release": "standard-version"
   },
   "dependencies": {
     "antd": "^5.24.6",
