@@ -6,8 +6,8 @@ const __dirname = path.dirname(__filename);
 
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
-import prettierPlugin from 'eslint-plugin-prettier';
-import reactPlugin from 'eslint-plugin-react';
+import prettier from 'eslint-plugin-prettier';
+import react from 'eslint-plugin-react';
 
 export default [
   {
@@ -17,8 +17,8 @@ export default [
   ...tseslint.configs.recommended,
   {
     plugins: {
-      react: reactPlugin,
-      prettier: prettierPlugin,
+      react,
+      prettier,
     },
     languageOptions: {
       parserOptions: {
